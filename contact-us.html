@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- WEEK 4: Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact EduConnect Uganda for information about courses, learning resources and educational opportunities.">
+    <meta name="author" content="EduConnect Uganda">
+
+    <title>Contact Us - EduConnect Uganda</title>
+
+    <!-- Website favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+
+    <!-- External CSS shared by all website pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+    <!-- WEEK 4: Semantic website header -->
+    <header id="page-header">
+        <h1>Contact EduConnect Uganda</h1>
+        <p>We are ready to hear from you</p>
+    </header>
+
+    <!-- WEEK 4: Navigation list; horizontal layout is defined in style.css -->
+    <nav class="main-navigation" aria-label="Main navigation">
+        <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">courses</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+    <li><a href="Account.html">Account</a></li>
+    <li><a href="learning-resources.html">Learning Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- WEEK 4: Main content -->
+    <main id="contact-main">
+
+        <!-- Introduction -->
+        <section id="contact-introduction" class="contact-intro">
+
+            <h2 class="highlight">Contact Us</h2>
+
+            <p>
+                Do you have a question about our courses, learning resources
+                or educational opportunities? Contact EduConnect Uganda.
+            </p>
+
+        </section>
+
+        <!-- Contact sections to be arranged using Flexbox in style.css -->
+        <div class="contact-container">
+
+            <!-- Contact information -->
+            <section id="contact-details" class="contact-details">
+
+                <h2 class="highlight">Our Contact Information</h2>
+
+                <p>
+                    <strong>Email:</strong>
+                    info@educonnectuganda.com
+                </p>
+
+                <p>
+                    <strong>Location:</strong> Uganda
+                </p>
+
+                <h3>Contact Information Table</h3>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <caption>Ways to Contact EduConnect Uganda</caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Contact Method</th>
+                                <th scope="col">Details</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Email</td>
+                                <td>info@educonnectuganda.com</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="2">Online Support</td>
+                                <td>Educational enquiries</td>
+                            </tr>
+
+                            <tr>
+                                <td>Learning resources enquiries</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    We welcome questions and suggestions
+                                    from learners.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Contact message form -->
+            <section id="message-section" class="contact-form">
+
+                <h2 class="highlight">Send Us a Message</h2>
+
+                <!-- Demonstration form: no data is sent or stored -->
+                <form action="#" method="post"
+                      onsubmit="alert('This is a demonstration form. Your message has not been sent.'); return false;">
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+
+                    <label for="telephone">Telephone Number</label>
+
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="Enter your telephone number"
+                        autocomplete="tel">
+
+                    <label for="contact-date">Preferred Contact Date</label>
+
+                    <input
+                        type="date"
+                        id="contact-date"
+                        name="contact-date">
+
+                    <label for="category">Enquiry Category</label>
+
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="courses">Course Information</option>
+                        <option value="resources">Learning Resources</option>
+                        <option value="guidance">Educational Guidance</option>
+                        <option value="support">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>How would you prefer us to contact you?</legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="contact-method"
+                                value="email"
+                                required>
+                            Email
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="contact-method"
+                                value="telephone">
+                            Telephone
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Which services interest you?</legend>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="services"
+                                value="courses">
+                            Courses
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="services"
+                                value="resources">
+                            Learning Resources
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="services"
+                                value="guidance">
+                            Educational Guidance
+                        </label>
+                    </fieldset>
+
+                    <label for="message">Your Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here"
+                        required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+        <!-- Embedded map -->
+        <section id="location-section" class="location-section">
+
+            <h2 class="highlight">Find Uganda on Google Maps</h2>
+
+            <p>
+                The map below demonstrates how Google Maps can be embedded
+                into an HTML webpage.
+            </p>
+
+            <div class="map-container">
+
+                <iframe
+                    class="map-frame"
+                    src="https://maps.google.com/maps?q=Uganda&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    title="Map showing Uganda"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- WEEK 4: Semantic website footer -->
+    <footer id="page-footer">
+
+        <p>&copy; 2026 EduConnect Uganda</p>
+
+        <p>Connecting learners with educational opportunities.</p>
+
+    </footer>
+
+</body>
+</html>

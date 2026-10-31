@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- WEEK 4: Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register with EduConnect Uganda to access educational information and learning resources.">
+    <meta name="author" content="EduConnect Uganda">
+
+    <title>Account - EduConnect Uganda</title>
+
+    <!-- Website favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body class="account-page">
+
+    <!-- WEEK 4: Semantic page header -->
+    <header id="page-header">
+        <h1>EduConnect Uganda</h1>
+        <p>Student Account</p>
+    </header>
+
+    <!-- WEEK 4: Horizontal navigation list -->
+    <nav class="main-navigation" aria-label="Main navigation">
+
+        <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">courses</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+    <li><a href="Account.html">Account</a></li>
+    <li><a href="learning-resources.html">Learning Resources</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- WEEK 4: Main page content -->
+    <main id="account-main">
+
+        <!-- Account introduction -->
+        <section id="account-introduction" class="account-intro">
+
+            <h2>Create an Account</h2>
+
+            <p>
+                Register with EduConnect Uganda to explore educational
+                information and learning resources.
+            </p>
+
+        </section>
+
+        <!-- Flexbox layout for registration and account information -->
+        <div class="account-container">
+
+            <!-- Student registration form -->
+            <section id="registration-section" class="account-form">
+
+                <h2>Student Registration</h2>
+
+                <form action="#" method="get">
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+
+                    <label for="user">User Type</label>
+
+                    <select id="user" name="user" required>
+                        <option value="">Select user type</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="parent">Parent</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+
+                    <button type="submit">Register</button>
+
+                </form>
+
+            </section>
+
+            <!-- Account information and table -->
+            <section id="account-information" class="account-information">
+
+                <h2>Account Information</h2>
+
+                <p>
+                    EduConnect Uganda helps learners access useful
+                    educational information and learning resources.
+                </p>
+
+                <h3>Registration Details</h3>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <caption>Account Registration Information</caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Personal Details</td>
+                                <td>Full name</td>
+                            </tr>
+
+                            <tr>
+                                <td>Email address</td>
+                            </tr>
+
+                            <tr>
+                                <td>Account Type</td>
+                                <td>Student, Teacher, Parent or Other</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    Enter accurate information when
+                                    completing the registration form.
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+         <!-- Embedded map -->
+        <section id="location-section" class="location-section">
+
+            <h2 class="highlight">Find Uganda on Google Maps</h2>
+
+            <p>
+                The map below demonstrates how Google Maps can be embedded
+                into an HTML webpage.
+            </p>
+
+            <div class="map-container">
+
+                <iframe
+                    class="map-frame"
+                    src="https://maps.google.com/maps?q=Uganda&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    title="Map showing Uganda"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- WEEK 4: Semantic footer -->
+    <footer id="page-footer">
+
+        <p>&copy; 2026 EduConnect Uganda</p>
+
+        <p>Connecting learners with educational opportunities.</p>
+
+    </footer>
+
+</body>
+</html>

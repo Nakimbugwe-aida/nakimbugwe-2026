@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Login - EducConnect Uganda</title>
+
+<meta name="description" content="Login to EducConnect Uganda to connect with students, teachers and educational opportunities.">
+
+<!-- External CSS stylesheet -->
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<!-- MAIN LOGIN CONTAINER -->
+<main class="login-container">
+
+    <!-- LEFT WELCOME SECTION -->
+    <section class="welcome-section">
+
+        <div class="logo" aria-hidden="true">🎓</div>
+
+        <h1>EducConnect Uganda</h1>
+
+        <p>
+            Connecting students, teachers and educational
+            opportunities across Uganda.
+        </p>
+
+        <div class="education-icon" aria-hidden="true">
+            📚
+        </div>
+
+        <p class="tagline">
+            Learn. Connect. Grow. Succeed.
+        </p>
+
+    </section>
+
+    <!-- RIGHT LOGIN FORM -->
+    <section class="form-section">
+
+        <h2>Welcome Back!</h2>
+
+        <p class="subtitle">
+            Login to access your EducConnect account.
+        </p>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+            <div class="form-options">
+
+                <label class="remember">
+                    <input
+                        type="checkbox"
+                        id="remember"
+                        name="remember"
+                    >
+                    Remember me
+                </label>
+
+                <!-- Forgot password link -->
+                <a href="forgot-password.html">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button type="submit" class="login-button">
+                Login to Account
+            </button>
+            
+            <p class="back-home">
+                    <a href="index.html">← Back to Home</a>
+                </p>
+
+        </form>
+
+        <p class="register-text">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+
+        <div class="footer">
+            &copy; 2026 EducConnect Uganda.
+            All rights reserved.
+        </div>
+
+    </section>
+
+</main>
+
+<!-- DEMONSTRATION LOGIN SCRIPT -->
+<script>
+    /*
+      DEMONSTRATION ONLY
+
+      This script checks that the required fields are completed.
+      Real account authentication requires a backend.
+    */
+
+    document.getElementById("loginForm").addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+
+            if (email !== "" && password.trim() !== "") {
+
+                alert(
+                    "Login form submitted successfully! " +
+                    "Connect your authentication system to log in."
+                );
+
+            }
+
+        }
+    );
+</script>
+
+
+</body>
+</html>

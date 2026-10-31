@@ -1,0 +1,698 @@
+/* GENERAL PAGE STYLING */
+/* HOME BANNER */
+
+.banner {
+    background-image: url("banner-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.banner div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner a {
+    display: inline-block;
+    background: #ffd54f;
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.banner a:hover {
+    background: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f8fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+/*login */
+        /* GENERAL STYLING */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body.login-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0e7490, #075985);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        /* MAIN LOGIN CONTAINER */
+
+        .login-container {
+            width: 900px;
+            max-width: 100%;
+            min-height: 520px;
+            background: #FFFFFF;
+            display: flex;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        }
+
+        /* LEFT SIDE */
+
+        .welcome-section {
+            width: 45%;
+            background: linear-gradient(145deg, #075985, #0e7490);
+            color: white;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .welcome-section h1 {
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .welcome-section p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .education-icon {
+            width: 145px;
+            height: 145px;
+            background: rgba(255, 255, 255, 0.16);
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 75px;
+            margin-bottom: 25px;
+        }
+
+        .welcome-section .tagline {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        /* RIGHT SIDE LOGIN FORM */
+
+        .form-section {
+            width: 55%;
+            padding: 50px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-section h2 {
+            color: #075985;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777777;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* FORM INPUTS */
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            outline: none;
+            font-size: 14px;
+            background: #f3f8fc;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #0e7490;
+            background: white;
+            box-shadow: 0 0 5px rgba(14, 116, 144, 0.2);
+        }
+
+        /* REMEMBER PASSWORD */
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            font-size: 12px;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #555555;
+        }
+
+        .remember input {
+            accent-color: #0e7490;
+        }
+
+        .form-options a {
+            color: #0e7490;
+            text-decoration: none;
+        }
+
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+
+        /* LOGIN BUTTON */
+
+        .login-button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 7px;
+            background: linear-gradient(90deg, #0e7490, #0e7490);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-button:hover {
+            background: #075985;
+            transform: translateY(-2px);
+        }
+
+        /* REGISTRATION LINK */
+
+        .register-text {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .register-text a {
+            color: #0e7490;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 12px;
+            color: #777777;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+
+        @media screen and (max-width: 650px) {
+
+            body.login-page {
+                padding: 15px;
+            }
+
+            .login-container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .welcome-section {
+                width: 100%;
+                padding: 30px 20px;
+            }
+
+            .welcome-section h1 {
+                font-size: 24px;
+            }
+
+            .welcome-section p {
+                margin-bottom: 15px;
+            }
+
+            .education-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 48px;
+                margin-bottom: 15px;
+            }
+
+            .form-section {
+                width: 100%;
+                padding: 35px 25px;
+            }
+
+            .form-section h2 {
+                font-size: 25px;
+            }
+        }
+
+/* HEADER */
+
+header {
+    background: #ffffff;
+    color: #075985;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #0e7490;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #0e7490;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #facc15;
+    color: black;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* CONTACT INTRODUCTION */
+
+.contact-intro {
+    text-align: center;
+    background: #e0f2fe;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* CONTACT LAYOUT */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+    min-width: 260px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* HEADINGS */
+
+.highlight {
+    color: #075985;
+}
+
+/* FORM LABELS */
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* TEXT, EMAIL, TELEPHONE, DATE, DROPDOWN AND TEXTAREA */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* RADIO BUTTONS AND CHECKBOXES */
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #0e7490;
+}
+
+.choice-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.form-question {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* TEXTAREA */
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+
+button {
+    background: #0e7490;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #075985;
+}
+
+/* CONTACT INFORMATION TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+caption {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 18px;
+}
+
+th {
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #000;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+tr:nth-child(even) td {
+    background-color: #f5f5f5;
+}
+
+tr:hover td {
+    background-color: #e0e0e0;
+}
+
+/* GOOGLE MAP */
+
+.map-frame {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #082f49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+
+    nav a {
+        margin: 3px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+        font-size: 14px;
+    }
+}
+
+/* WEEK 4: HORIZONTAL NAVIGATION */
+nav {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow-x: auto;
+}
+
+nav a {
+    display: inline-block;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+/* WEEK 4: RESPONSIVE IMAGES AND FLEXBOX GALLERY */
+img {
+   img {
+    display: block;
+    margin: 20px auto;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.gallery figure {
+    flex: 1 1 220px;
+    max-width: 300px;
+    margin: 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* WEEK 4: RESPONSIVE VIDEO AND TABLE */
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+}
+
+.video-container iframe,
+.video-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* WEEK 4: MOBILE RESPONSIVENESS */
+@media screen and (max-width: 600px) {
+    .banner {
+        height: auto;
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    /* Keep navigation horizontal on small screens too */
+    nav {
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    nav a {
+        text-align: center;
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .login-container {
+        flex-direction: column;
+    }
+
+    .welcome-section,
+    .form-section {
+        width: 100%;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+        font-size: 14px;
+    }
+}
+
+/* FIX: HORIZONTAL MENU WHEN LINKS ARE INSIDE UL/LI */
+nav ul,
+.main-navigation ul,
+.main-navigation .nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    align-items: center;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+nav ul li,
+.main-navigation ul li,
+.main-navigation .nav-links li {
+    display: inline-flex !important;
+    flex: 0 0 auto;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a,
+.main-navigation ul li a,
+.main-navigation .nav-links li a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+.main-navigation ul li a:hover,
+.main-navigation .nav-links li a:hover {
+    background-color: #facc15;
+    color: #000000;
+}
